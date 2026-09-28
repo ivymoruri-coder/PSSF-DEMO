@@ -1,0 +1,66 @@
+relationship fcd2a6a7-3c2b-4cf4-b0a3-eda98cb09a0d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Account'.'Last Modified Date Time'
+	toColumn: LocalDateTable_0a7801ec-2d02-4746-9248-df5d31f342f0.Date
+
+relationship b1d3ffe7-89b4-4767-8419-3c5ff4dda5f6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Account'.'Last Date Modified'
+	toColumn: LocalDateTable_56125f26-9004-444e-a488-af14b98f47b2.Date
+
+relationship 6374f9c5-8de5-4c77-ba68-3def13556fdc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Account'.$systemCreatedAt
+	toColumn: LocalDateTable_35aa34af-0c86-4294-89af-36b5580f9c55.Date
+
+relationship 76030e76-4543-47c5-b960-490f9140eba6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Account'.$systemModifiedAt
+	toColumn: LocalDateTable_6db42b8b-2a69-4bee-92b1-19343b222e88.Date
+
+relationship 7a3453c0-0df5-4606-986f-dc21c2a3a8d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.'Posting Date'
+	toColumn: LocalDateTable_a9e27b47-d1df-43a0-b933-2fb6cebb1027.Date
+
+relationship 369e9f91-3d46-45ac-9b4c-b045de45e67a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.'Document Date'
+	toColumn: LocalDateTable_12b6f5ce-c078-46a9-b968-9c9ada973dbb.Date
+
+relationship ba6f3325-a31b-44a0-a146-3eef381b7e97
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.'VAT Reporting Date'
+	toColumn: LocalDateTable_bb2f60f1-e205-47f1-8243-5d580e1f36f5.Date
+
+relationship c80f8373-4e93-4c80-83e0-e2ff5b2a6112
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.'Last Modified DateTime'
+	toColumn: LocalDateTable_ffc5fed5-0dad-47be-8d2a-623340d6c20a.Date
+
+relationship eb8744d6-5193-4940-8cbd-03471bda34eb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.$systemCreatedAt
+	toColumn: LocalDateTable_614657aa-a776-40f1-bee5-1ebe0d045195.Date
+
+relationship 552f060d-2cc3-4641-bcf0-f6c35488bdd1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Entry'.$systemModifiedAt
+	toColumn: LocalDateTable_aa86d045-d33e-4eef-b881-6dd41056c90e.Date
+
+relationship 798cd014-1846-4540-9b71-9d5026ecfb1b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'G_L Budget'.Date
+	toColumn: LocalDateTable_516b61e6-4616-4c87-b222-c0b17888dafa.Date
+
+relationship AutoDetected_326e6b09-782f-4f3d-a64a-8ab2b5955109
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'G_L Budget'.'Entry No_'
+	toColumn: 'G_L Entry'.'Entry No_'
+
+relationship a6fbd61f-42ab-4beb-950d-1b8c00448337
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CalendarTable.Date
+	toColumn: LocalDateTable_52653eeb-16d9-4da9-8c5a-25cd91f1ed67.Date
+

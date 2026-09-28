@@ -1,0 +1,137 @@
+table 'G_L Budget'
+	lineageTag: 0752671a-0cb9-4895-aab3-77dee6a1eca5
+
+	column 'Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b99b017-b49c-4630-a986-e782f402dc1d
+		summarizeBy: none
+		sourceColumn: Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Budget Name'
+		dataType: string
+		lineageTag: ace9c834-e1d0-4669-8412-24d145c26e20
+		summarizeBy: none
+		sourceColumn: Budget Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'G_L Account No_'
+		dataType: string
+		lineageTag: 85db5aca-8cdc-4b3f-bf39-973c8b2dd2b4
+		summarizeBy: none
+		sourceColumn: G_L Account No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Name'
+		dataType: string
+		lineageTag: 91d4907d-7059-4838-a579-66bb07812cea
+		summarizeBy: none
+		sourceColumn: Account Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 312b4aac-96ec-43bd-b607-a4c4dedc1883
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 798cd014-1846-4540-9b71-9d5026ecfb1b
+			defaultHierarchy: LocalDateTable_516b61e6-4616-4c87-b222-c0b17888dafa.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Amount
+		dataType: double
+		lineageTag: d2469420-bd38-4e92-adcd-faede3042670
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Description
+		dataType: string
+		lineageTag: a0fcbb84-d321-429c-b89b-0848a7816918
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Category'
+		dataType: int64
+		formatString: 0
+		lineageTag: b50badd0-f516-4d3a-9d67-e7fda2b8b61c
+		summarizeBy: sum
+		sourceColumn: Account Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'G_L Budget' = m
+		mode: import
+		source = ```
+				let
+				    Source = #"G_L Entry",
+				 
+				    NormalizeKey = Table.TransformColumns(Source, {{"G_L Account No_", each Text.Trim(Text.From(_)), type text}}),
+				 
+				    AddYear = Table.AddColumn(NormalizeKey, "Year", each Date.Year([Posting Date]), Int64.Type),
+				    AddMonth = Table.AddColumn(AddYear, "Month", each Date.Month([Posting Date]), Int64.Type),
+				 
+				    Grouped = Table.Group(
+				        AddMonth,
+				        {"G_L Account No_", "Year", "Month"},
+				        {{"ActualAmount", each List.Sum([Amount]), type number}}
+				    ),
+				 
+				    AccountNormalized = Table.TransformColumns(#"G_L Account", {{"No_", each Text.Trim(Text.From(_)), type text}}),
+				 
+				    MergedAccounts = Table.NestedJoin(
+				        Grouped, {"G_L Account No_"},
+				        AccountNormalized, {"No_"},
+				        "AccountInfo", JoinKind.LeftOuter
+				    ),
+				    ExpandedAccounts = Table.ExpandTableColumn(
+				        MergedAccounts, "AccountInfo", 
+				        {"Name", "Account Category", "Income_Balance"}, 
+				        {"Account Name", "Account Category", "Income_Balance"}
+				    ),
+				 
+				    AddSeed = Table.AddColumn(ExpandedAccounts, "Seed", each 
+				        Number.Mod([Year] * 1000 + [Month] * 10 + Text.Length([G_L Account No_]), 97) / 97, type number
+				    ),
+				 
+				    AddFactor = Table.AddColumn(AddSeed, "Factor", each 
+				        if [Account Category] = "Income" then 0.95 + ([Seed] * 0.10)
+				        else if [Account Category] = "Expense" then 1.03 + ([Seed] * 0.07)
+				        else 1.0 + (([Seed] - 0.5) * 0.06), type number
+				    ),
+				 
+				    AddBudgetAmount = Table.AddColumn(AddFactor, "Amount", each [ActualAmount] * [Factor], type number),
+				 
+				    AddDate = Table.AddColumn(AddBudgetAmount, "Date", each #date([Year], [Month], 1), type date),
+				    AddEntryNo = Table.AddIndexColumn(AddDate, "Entry No_", 1, 1, Int64.Type),
+				    AddBudgetName = Table.AddColumn(AddEntryNo, "Budget Name", each "SYNTHETIC-FY", type text),
+				    AddDescription = Table.AddColumn(AddBudgetName, "Description", each "Synthetic Budget - Generated", type text),
+				 
+				    Final = Table.SelectColumns(AddDescription, 
+				        {"Entry No_", "Budget Name", "G_L Account No_", "Account Name", "Date", "Amount", "Description", "Account Category"}
+				    )
+				in
+				    Final
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

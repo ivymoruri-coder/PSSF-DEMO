@@ -1,0 +1,457 @@
+table 'G_L Account'
+	lineageTag: 5e829852-7821-4ebc-8ffe-0f7fc4d46bf5
+
+	column No_
+		dataType: string
+		lineageTag: 7bbf5548-a6ec-4cee-a10d-9811eee719a3
+		summarizeBy: none
+		sourceColumn: No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: eb302b5d-22fb-4efe-81a4-7ddec25954b4
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Search Name'
+		dataType: string
+		lineageTag: 023c39cb-c1c3-472d-be8a-da51346fe1e8
+		summarizeBy: none
+		sourceColumn: Search Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 51827743-289d-41b0-b163-d481f426fdf8
+		summarizeBy: sum
+		sourceColumn: Account Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 1 Code'
+		dataType: string
+		lineageTag: 00e95610-3ccd-4d8f-8178-5494d3a61356
+		summarizeBy: none
+		sourceColumn: Global Dimension 1 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 2 Code'
+		dataType: string
+		lineageTag: 5283afde-503a-4431-a864-df952a867006
+		summarizeBy: none
+		sourceColumn: Global Dimension 2 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Category'
+		dataType: int64
+		formatString: 0
+		lineageTag: 47052e0b-c9b9-47a4-bb04-09b446e2204a
+		summarizeBy: sum
+		sourceColumn: Account Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income_Balance
+		dataType: int64
+		formatString: 0
+		lineageTag: 78a045b0-810d-44e1-b6ab-d3764cffe4a7
+		summarizeBy: sum
+		sourceColumn: Income_Balance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Debit_Credit
+		dataType: int64
+		formatString: 0
+		lineageTag: 43ac8c3a-98aa-4a7d-a533-b07ee45a27d2
+		summarizeBy: sum
+		sourceColumn: Debit_Credit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No_ 2'
+		dataType: string
+		lineageTag: dc620093-49bc-4fbe-a889-69ef469eb31b
+		summarizeBy: none
+		sourceColumn: No_ 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Blocked
+		dataType: int64
+		formatString: 0
+		lineageTag: 8c3816c3-57a0-4c5c-846c-e4044cd3e9f2
+		summarizeBy: sum
+		sourceColumn: Blocked
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direct Posting'
+		dataType: int64
+		formatString: 0
+		lineageTag: 05df671c-fad1-480a-857a-718212bcf3b0
+		summarizeBy: sum
+		sourceColumn: Direct Posting
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reconciliation Account'
+		dataType: int64
+		formatString: 0
+		lineageTag: f2413800-cc04-4b9b-9f43-2a4656f10e10
+		summarizeBy: sum
+		sourceColumn: Reconciliation Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'New Page'
+		dataType: int64
+		formatString: 0
+		lineageTag: 64e0468b-be78-409b-88cf-af24cf562ab5
+		summarizeBy: sum
+		sourceColumn: New Page
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No_ of Blank Lines'
+		dataType: int64
+		formatString: 0
+		lineageTag: 93f8f228-396d-49a9-9161-933299cc00ad
+		summarizeBy: sum
+		sourceColumn: No_ of Blank Lines
+
+		annotation SummarizationSetBy = Automatic
+
+	column Indentation
+		dataType: int64
+		formatString: 0
+		lineageTag: 1a15a9b5-2e82-436d-858c-98c7c7f14ad7
+		summarizeBy: sum
+		sourceColumn: Indentation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source Currency Code'
+		dataType: string
+		lineageTag: 3d586bf6-4e90-48ca-a24b-bb4252a3c4d6
+		summarizeBy: none
+		sourceColumn: Source Currency Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source Currency Posting'
+		dataType: int64
+		formatString: 0
+		lineageTag: 78df9642-0d61-4120-b8ef-3c0be367599d
+		summarizeBy: sum
+		sourceColumn: Source Currency Posting
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source Currency Revaluation'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8140d7dd-c806-4f8f-b82f-961d3e5f0756
+		summarizeBy: sum
+		sourceColumn: Source Currency Revaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unrealized Revaluation'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0df07012-d2f0-4261-afac-6119960dec9c
+		summarizeBy: sum
+		sourceColumn: Unrealized Revaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date Time'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0fcc9675-4eee-4dfb-9c8c-b373bf90256a
+		summarizeBy: none
+		sourceColumn: Last Modified Date Time
+
+		variation Variation
+			isDefault
+			relationship: fcd2a6a7-3c2b-4cf4-b0a3-eda98cb09a0d
+			defaultHierarchy: LocalDateTable_0a7801ec-2d02-4746-9248-df5d31f342f0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Date Modified'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 27b1842f-4341-4079-b20d-587f0731073f
+		summarizeBy: none
+		sourceColumn: Last Date Modified
+
+		variation Variation
+			isDefault
+			relationship: b1d3ffe7-89b4-4767-8419-3c5ff4dda5f6
+			defaultHierarchy: LocalDateTable_56125f26-9004-444e-a488-af14b98f47b2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Totaling
+		dataType: string
+		lineageTag: c60c5c32-65a9-4221-a862-374d2661d0dc
+		summarizeBy: none
+		sourceColumn: Totaling
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consol_ Translation Method'
+		dataType: int64
+		formatString: 0
+		lineageTag: cd871b06-68f8-45aa-b0b4-985921e693e2
+		summarizeBy: sum
+		sourceColumn: Consol_ Translation Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consol_ Debit Acc_'
+		dataType: string
+		lineageTag: 3f8d7b83-e64c-41e3-ad66-3cd5b2060b35
+		summarizeBy: none
+		sourceColumn: Consol_ Debit Acc_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Consol_ Credit Acc_'
+		dataType: string
+		lineageTag: 88aeb317-e9de-4716-b238-e7ff943a8ea6
+		summarizeBy: none
+		sourceColumn: Consol_ Credit Acc_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Posting Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 82b75bbd-5ed0-4f63-be02-9af00da664f5
+		summarizeBy: sum
+		sourceColumn: Gen_ Posting Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Bus_ Posting Group'
+		dataType: string
+		lineageTag: 1fc8c9c2-b650-42fd-86cd-41847f2df582
+		summarizeBy: none
+		sourceColumn: Gen_ Bus_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Prod_ Posting Group'
+		dataType: string
+		lineageTag: 1634c7f2-3612-46bd-b438-c3bf47aec605
+		summarizeBy: none
+		sourceColumn: Gen_ Prod_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Automatic Ext_ Texts'
+		dataType: int64
+		formatString: 0
+		lineageTag: e10879ff-ced0-496c-a3cb-be9107aad87d
+		summarizeBy: sum
+		sourceColumn: Automatic Ext_ Texts
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Area Code'
+		dataType: string
+		lineageTag: 70218db6-5bfa-45a5-873f-9d99242450ac
+		summarizeBy: none
+		sourceColumn: Tax Area Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Liable'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d5d1c99-4424-41d4-8316-5065faae22b9
+		summarizeBy: sum
+		sourceColumn: Tax Liable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Group Code'
+		dataType: string
+		lineageTag: 5afa0563-41c5-4fc6-8158-13e403261fcb
+		summarizeBy: none
+		sourceColumn: Tax Group Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Bus_ Posting Group'
+		dataType: string
+		lineageTag: 29c7868d-3d39-4731-88b2-f5a39be4a824
+		summarizeBy: none
+		sourceColumn: VAT Bus_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Prod_ Posting Group'
+		dataType: string
+		lineageTag: 4a0ceb3b-0e22-4886-8bfa-710f5fd987bf
+		summarizeBy: none
+		sourceColumn: VAT Prod_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exchange Rate Adjustment'
+		dataType: int64
+		formatString: 0
+		lineageTag: e5fc3a11-b4ca-4523-a737-3991b401917e
+		summarizeBy: sum
+		sourceColumn: Exchange Rate Adjustment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Default IC Partner G_L Acc_ No'
+		dataType: string
+		lineageTag: c87df8f4-8287-4761-9065-2061daee8f91
+		summarizeBy: none
+		sourceColumn: Default IC Partner G_L Acc_ No
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Omit Default Descr_ in Jnl_'
+		dataType: int64
+		formatString: 0
+		lineageTag: db75f302-89bb-487f-91c4-8ba06f4f285c
+		summarizeBy: sum
+		sourceColumn: Omit Default Descr_ in Jnl_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Subcategory Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: b65254ce-a817-4a15-8aee-21e2f5c71827
+		summarizeBy: sum
+		sourceColumn: Account Subcategory Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exclude From Consolidation'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a71b9b1-8593-45fa-87e2-5c18bb8a0db8
+		summarizeBy: sum
+		sourceColumn: Exclude From Consolidation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Type No_'
+		dataType: string
+		lineageTag: 57d06198-c8da-4f52-876e-b0c3a723ebb3
+		summarizeBy: none
+		sourceColumn: Cost Type No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Default Deferral Template Code'
+		dataType: string
+		lineageTag: 97c52541-0e99-419a-b60a-e9f99f4dcdb9
+		summarizeBy: none
+		sourceColumn: Default Deferral Template Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'API Account Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 74d57c92-c54c-4145-8fe6-c114b26cefe0
+		summarizeBy: sum
+		sourceColumn: API Account Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemId
+		dataType: string
+		lineageTag: a7052355-00d1-42b2-902b-c45f85f166ad
+		summarizeBy: none
+		sourceColumn: $systemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: df35c380-8c04-4405-95bf-9d7a40f5ac90
+		summarizeBy: none
+		sourceColumn: $systemCreatedAt
+
+		variation Variation
+			isDefault
+			relationship: 6374f9c5-8de5-4c77-ba68-3def13556fdc
+			defaultHierarchy: LocalDateTable_35aa34af-0c86-4294-89af-36b5580f9c55.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedBy
+		dataType: string
+		lineageTag: e1b0c310-33dc-42a1-8179-6da8c615ad55
+		summarizeBy: none
+		sourceColumn: $systemCreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a99de57e-c167-47cf-8b4e-6a820a4ff2a5
+		summarizeBy: none
+		sourceColumn: $systemModifiedAt
+
+		variation Variation
+			isDefault
+			relationship: 76030e76-4543-47c5-b960-490f9140eba6
+			defaultHierarchy: LocalDateTable_6db42b8b-2a69-4bee-92b1-19343b222e88.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedBy
+		dataType: string
+		lineageTag: 3c1bc45a-e9c0-41e2-88ad-c019387fe7cc
+		summarizeBy: none
+		sourceColumn: $systemModifiedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posting Type' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'G_L Account'[Direct Posting] = 1, "Direct",
+			    'G_L Account'[Direct Posting] = 0, "Indirect",
+			    BLANK()
+			)
+			
+			```
+		lineageTag: a7a696c9-12b3-457a-8038-c4e177837f9c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'G_L Account' = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("localhost", "PSSFKONZAERP"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PSSF$G_L Account$437dbf0e-84ff-417a-965d-ed2bb9650972"]}[Data]
+				in
+				  #"Navigation 1"
+

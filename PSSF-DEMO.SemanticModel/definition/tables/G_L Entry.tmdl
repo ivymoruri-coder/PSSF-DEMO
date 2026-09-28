@@ -1,0 +1,636 @@
+table 'G_L Entry'
+	lineageTag: 42b02da2-e9b3-4804-869c-bc9932ff21d6
+
+	column 'Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: f75eeaae-71a8-4ee8-b6d3-29948d148b70
+		summarizeBy: none
+		sourceColumn: Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'G_L Account No_'
+		dataType: string
+		lineageTag: 465f1204-e1e8-485d-aed2-7885440f3274
+		summarizeBy: none
+		sourceColumn: G_L Account No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posting Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 046d985a-2f43-4e1c-8c20-dc39e63485a1
+		summarizeBy: none
+		sourceColumn: Posting Date
+
+		variation Variation
+			isDefault
+			relationship: 7a3453c0-0df5-4606-986f-dc21c2a3a8d8
+			defaultHierarchy: LocalDateTable_a9e27b47-d1df-43a0-b933-2fb6cebb1027.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: bacecda3-17a1-4741-b31e-a1d67f3e93b4
+		summarizeBy: sum
+		sourceColumn: Document Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document No_'
+		dataType: string
+		lineageTag: e1502c09-159f-476a-8541-4639260ce798
+		summarizeBy: none
+		sourceColumn: Document No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: f0b283c2-96b4-4b17-9db5-7aa5e6563899
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bal_ Account No_'
+		dataType: string
+		lineageTag: 9c6bb26b-33d0-452b-8e4d-4ed62bf5730e
+		summarizeBy: none
+		sourceColumn: Bal_ Account No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Amount
+		dataType: double
+		lineageTag: 70b2bfe5-5fa6-4938-9566-9be8bf14ac60
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Source Currency Amount'
+		dataType: double
+		lineageTag: 44d5a583-abf8-4775-8488-3fe4e472d5b2
+		summarizeBy: sum
+		sourceColumn: Source Currency Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Source Currency VAT Amount'
+		dataType: double
+		lineageTag: 8fbaa029-a4e1-445d-882c-cede15c67c5f
+		summarizeBy: sum
+		sourceColumn: Source Currency VAT Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Source Currency Code'
+		dataType: string
+		lineageTag: fbcece62-aec4-4593-8501-71abddb9830e
+		summarizeBy: none
+		sourceColumn: Source Currency Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 1 Code'
+		dataType: string
+		lineageTag: a98e7922-d681-469f-9e73-5e9920f5ed91
+		summarizeBy: none
+		sourceColumn: Global Dimension 1 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 2 Code'
+		dataType: string
+		lineageTag: f1ab3e6e-949a-40cd-a9e8-097af2bdb45c
+		summarizeBy: none
+		sourceColumn: Global Dimension 2 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'User ID'
+		dataType: string
+		lineageTag: 716e092b-121f-44ba-a046-4c3576b0c7d1
+		summarizeBy: none
+		sourceColumn: User ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source Code'
+		dataType: string
+		lineageTag: 09955d0e-2124-46d2-9a19-bfa04d962a48
+		summarizeBy: none
+		sourceColumn: Source Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'System-Created Entry'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3332d95f-d5a3-45d4-ae7c-5c2fa5b19603
+		summarizeBy: sum
+		sourceColumn: System-Created Entry
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prior-Year Entry'
+		dataType: int64
+		formatString: 0
+		lineageTag: df91af26-109d-444c-89e6-27ba0642a038
+		summarizeBy: sum
+		sourceColumn: Prior-Year Entry
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job No_'
+		dataType: string
+		lineageTag: b7226758-3f7c-4860-bfdc-b1ecd26ba670
+		summarizeBy: none
+		sourceColumn: Job No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: double
+		lineageTag: 3d417e77-bf17-45ba-82c1-a7310a4ef66c
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'VAT Amount'
+		dataType: double
+		lineageTag: 43481f97-6803-4d44-8fb3-3898b3eb44d3
+		summarizeBy: sum
+		sourceColumn: VAT Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Business Unit Code'
+		dataType: string
+		lineageTag: c81c2cd6-0983-4704-86b2-8cb36a6803bc
+		summarizeBy: none
+		sourceColumn: Business Unit Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Journal Batch Name'
+		dataType: string
+		lineageTag: cee220fe-b170-4189-a1fc-344ab5ecfbb0
+		summarizeBy: none
+		sourceColumn: Journal Batch Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason Code'
+		dataType: string
+		lineageTag: 4ff717a8-9e94-4fdb-890e-16c03e53c364
+		summarizeBy: none
+		sourceColumn: Reason Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Posting Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: b614980c-32da-4ea2-8793-b92e29a0ef0c
+		summarizeBy: sum
+		sourceColumn: Gen_ Posting Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Bus_ Posting Group'
+		dataType: string
+		lineageTag: e5bbc39e-9ca1-40be-bf98-c9d3aad48904
+		summarizeBy: none
+		sourceColumn: Gen_ Bus_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gen_ Prod_ Posting Group'
+		dataType: string
+		lineageTag: 03672215-eb8e-4b57-8ff9-680997144992
+		summarizeBy: none
+		sourceColumn: Gen_ Prod_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bal_ Account Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 143231b0-b316-47ee-a766-6718ffefbf6f
+		summarizeBy: sum
+		sourceColumn: Bal_ Account Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transaction No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: ffef39b2-46c3-418c-8aaa-428b318cefc1
+		summarizeBy: sum
+		sourceColumn: Transaction No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Debit Amount'
+		dataType: double
+		lineageTag: 4d59e555-9a92-4b38-8637-1f28a5652642
+		summarizeBy: sum
+		sourceColumn: Debit Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Credit Amount'
+		dataType: double
+		lineageTag: 1851ff07-a5cb-46e2-ab37-f1ce151d14f0
+		summarizeBy: sum
+		sourceColumn: Credit Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Document Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e988d805-d59a-4f38-bb16-58d0df8540f9
+		summarizeBy: none
+		sourceColumn: Document Date
+
+		variation Variation
+			isDefault
+			relationship: 369e9f91-3d46-45ac-9b4c-b045de45e67a
+			defaultHierarchy: LocalDateTable_12b6f5ce-c078-46a9-b968-9c9ada973dbb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'External Document No_'
+		dataType: string
+		lineageTag: de341060-9d73-4a79-afb6-f823eefbcd0f
+		summarizeBy: none
+		sourceColumn: External Document No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d5b7535-3edd-4048-85fe-8c93e7baf93a
+		summarizeBy: sum
+		sourceColumn: Source Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Source No_'
+		dataType: string
+		lineageTag: a6ea30f5-f374-435e-adb6-a355e5c05a78
+		summarizeBy: none
+		sourceColumn: Source No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No_ Series'
+		dataType: string
+		lineageTag: d8207c6b-a980-4264-a3aa-3838ee787260
+		summarizeBy: none
+		sourceColumn: No_ Series
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Area Code'
+		dataType: string
+		lineageTag: db50a5e5-8d3b-4aa8-b77b-adc1e295f8bc
+		summarizeBy: none
+		sourceColumn: Tax Area Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Liable'
+		dataType: int64
+		formatString: 0
+		lineageTag: bde7fd24-4439-4372-b8fc-ed57b3b73a2d
+		summarizeBy: sum
+		sourceColumn: Tax Liable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tax Group Code'
+		dataType: string
+		lineageTag: 4b318290-1e3b-433e-9d78-1d1b8c19dbd7
+		summarizeBy: none
+		sourceColumn: Tax Group Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Use Tax'
+		dataType: int64
+		formatString: 0
+		lineageTag: 770c2464-f209-4243-9229-1abf0d4b549c
+		summarizeBy: sum
+		sourceColumn: Use Tax
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Bus_ Posting Group'
+		dataType: string
+		lineageTag: d7d850ef-979b-4179-b6dd-b2735d34f8ac
+		summarizeBy: none
+		sourceColumn: VAT Bus_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Prod_ Posting Group'
+		dataType: string
+		lineageTag: cb740bbc-4d8f-415c-9e1f-aa87946f22f0
+		summarizeBy: none
+		sourceColumn: VAT Prod_ Posting Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Additional-Currency Amount'
+		dataType: double
+		lineageTag: 69f742b6-af19-4191-8c21-2a79adb7edfc
+		summarizeBy: sum
+		sourceColumn: Additional-Currency Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Add_-Currency Debit Amount'
+		dataType: double
+		lineageTag: dc8386c6-b6d7-4010-be70-17dfcc0ec66c
+		summarizeBy: sum
+		sourceColumn: Add_-Currency Debit Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Add_-Currency Credit Amount'
+		dataType: double
+		lineageTag: 5f259a86-f326-43b6-8f15-d0779fbc41db
+		summarizeBy: sum
+		sourceColumn: Add_-Currency Credit Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Close Income Statement Dim_ ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 56c7b517-16af-4bde-827d-1adea9735c8b
+		summarizeBy: count
+		sourceColumn: Close Income Statement Dim_ ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IC Partner Code'
+		dataType: string
+		lineageTag: 742ef44f-1167-4f16-bc7d-bdb0a4348c1f
+		summarizeBy: none
+		sourceColumn: IC Partner Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reversed
+		dataType: int64
+		formatString: 0
+		lineageTag: bb7b0fe8-3346-43bd-bb13-68582702f9a4
+		summarizeBy: sum
+		sourceColumn: Reversed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reversed by Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 74a092ea-9888-484c-a10f-a54f0e8ae64f
+		summarizeBy: sum
+		sourceColumn: Reversed by Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reversed Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 479a810d-8db8-4e67-b48d-1efcd0ddbf18
+		summarizeBy: sum
+		sourceColumn: Reversed Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Journal Templ_ Name'
+		dataType: string
+		lineageTag: e35474a5-795b-4d7e-8df1-b73527850bbf
+		summarizeBy: none
+		sourceColumn: Journal Templ_ Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dimension Set ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 566ffe82-401f-4204-b53a-e726fddf783a
+		summarizeBy: count
+		sourceColumn: Dimension Set ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VAT Reporting Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0f3415b4-b6d9-40cc-947d-0431e7a35be3
+		summarizeBy: none
+		sourceColumn: VAT Reporting Date
+
+		variation Variation
+			isDefault
+			relationship: ba6f3325-a31b-44a0-a146-3eef381b7e97
+			defaultHierarchy: LocalDateTable_bb2f60f1-e205-47f1-8243-5d580e1f36f5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Dim_ Correction Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1de43107-bef3-4df6-adf5-c1a3a015e491
+		summarizeBy: sum
+		sourceColumn: Last Dim_ Correction Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Dim_ Correction Node'
+		dataType: int64
+		formatString: 0
+		lineageTag: aac6e8ad-5ede-401e-95d6-cc9e59a9ecf9
+		summarizeBy: sum
+		sourceColumn: Last Dim_ Correction Node
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dimension Changes Count'
+		dataType: int64
+		formatString: 0
+		lineageTag: 20a14cd4-3275-4cf0-b8b0-9d604326433a
+		summarizeBy: sum
+		sourceColumn: Dimension Changes Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Allocation Account No_'
+		dataType: string
+		lineageTag: 09d5a0a7-7a3e-42e5-8c03-df80d4991219
+		summarizeBy: none
+		sourceColumn: Allocation Account No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prod_ Order No_'
+		dataType: string
+		lineageTag: 466f9d26-2f3d-43e0-8e10-849e843f2d63
+		summarizeBy: none
+		sourceColumn: Prod_ Order No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FA Entry Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: f090830f-6d8f-4a5a-a44b-76092d2101fd
+		summarizeBy: sum
+		sourceColumn: FA Entry Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FA Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cf56833-0fe0-4724-9b00-49c687f99846
+		summarizeBy: sum
+		sourceColumn: FA Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comment
+		dataType: string
+		lineageTag: 293df48c-ee36-48af-9cb7-0303d54196b1
+		summarizeBy: none
+		sourceColumn: Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Non-Deductible VAT Amount'
+		dataType: double
+		lineageTag: 53bb59f0-23be-451a-b30e-86e8e5efc4e5
+		summarizeBy: sum
+		sourceColumn: Non-Deductible VAT Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Non-Deductible VAT Amount ACY'
+		dataType: double
+		lineageTag: 302ea997-4b73-478e-bfa8-e81ed3818198
+		summarizeBy: sum
+		sourceColumn: Non-Deductible VAT Amount ACY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Last Modified DateTime'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f00bb4a5-4140-4836-b49a-4ff043b0c158
+		summarizeBy: none
+		sourceColumn: Last Modified DateTime
+
+		variation Variation
+			isDefault
+			relationship: c80f8373-4e93-4c80-83e0-e2ff5b2a6112
+			defaultHierarchy: LocalDateTable_ffc5fed5-0dad-47be-8d2a-623340d6c20a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemId
+		dataType: string
+		lineageTag: 59f22e23-9591-420a-80e3-56cd5e1e2719
+		summarizeBy: none
+		sourceColumn: $systemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 28f10cf0-d546-46d1-ae62-095f12359d6d
+		summarizeBy: none
+		sourceColumn: $systemCreatedAt
+
+		variation Variation
+			isDefault
+			relationship: eb8744d6-5193-4940-8cbd-03471bda34eb
+			defaultHierarchy: LocalDateTable_614657aa-a776-40f1-bee5-1ebe0d045195.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedBy
+		dataType: string
+		lineageTag: e7fdac58-9694-48ad-9142-6bb770d81adb
+		summarizeBy: none
+		sourceColumn: $systemCreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 08aa89a8-68ae-475c-8fd1-32df98e4c0a7
+		summarizeBy: none
+		sourceColumn: $systemModifiedAt
+
+		variation Variation
+			isDefault
+			relationship: 552f060d-2cc3-4641-bcf0-f6c35488bdd1
+			defaultHierarchy: LocalDateTable_aa86d045-d33e-4eef-b881-6dd41056c90e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedBy
+		dataType: string
+		lineageTag: 8c8d3dfb-2c7f-4d47-91c5-0dce11758adf
+		summarizeBy: none
+		sourceColumn: $systemModifiedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'G_L Entry' = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("localhost", "PSSFKONZAERP"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PSSF$G_L Entry$437dbf0e-84ff-417a-965d-ed2bb9650972"]}[Data]
+				in
+				  #"Navigation 1"
+
