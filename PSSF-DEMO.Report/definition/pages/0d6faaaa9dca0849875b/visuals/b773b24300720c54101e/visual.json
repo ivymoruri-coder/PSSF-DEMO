@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b773b24300720c54101e",
+  "position": {
+    "x": 793.70689058571134,
+    "y": 0,
+    "z": 2,
+    "height": 252,
+    "width": 334,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Budget measures"
+                    }
+                  },
+                  "Property": "Variance"
+                }
+              },
+              "queryRef": "Budget measures.Variance",
+              "nativeQueryRef": "Variance"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Budget measures"
+                  }
+                },
+                "Property": "Variance"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d2890bf9dbe13381c3dd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budget measures"
+              }
+            },
+            "Property": "Variance"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

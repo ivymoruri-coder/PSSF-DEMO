@@ -1,12 +1,24 @@
 table 'G_L Budget'
 	lineageTag: 0752671a-0cb9-4895-aab3-77dee6a1eca5
 
+	column Description
+		dataType: string
+		lineageTag: a0fcbb84-d321-429c-b89b-0848a7816918
+		summarizeBy: none
+		sourceColumn: Description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
 	column 'Entry No_'
 		dataType: int64
 		formatString: 0
 		lineageTag: 4b99b017-b49c-4630-a986-e782f402dc1d
 		summarizeBy: none
 		sourceColumn: Entry No_
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -16,6 +28,8 @@ table 'G_L Budget'
 		summarizeBy: none
 		sourceColumn: Budget Name
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'G_L Account No_'
@@ -24,6 +38,8 @@ table 'G_L Budget'
 		summarizeBy: none
 		sourceColumn: G_L Account No_
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Account Name'
@@ -31,6 +47,8 @@ table 'G_L Budget'
 		lineageTag: 91d4907d-7059-4838-a579-66bb07812cea
 		summarizeBy: none
 		sourceColumn: Account Name
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -46,6 +64,8 @@ table 'G_L Budget'
 			relationship: 798cd014-1846-4540-9b71-9d5026ecfb1b
 			defaultHierarchy: LocalDateTable_516b61e6-4616-4c87-b222-c0b17888dafa.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -56,17 +76,11 @@ table 'G_L Budget'
 		summarizeBy: sum
 		sourceColumn: Amount
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column Description
-		dataType: string
-		lineageTag: a0fcbb84-d321-429c-b89b-0848a7816918
-		summarizeBy: none
-		sourceColumn: Description
-
-		annotation SummarizationSetBy = Automatic
 
 	column 'Account Category'
 		dataType: int64
@@ -74,6 +88,8 @@ table 'G_L Budget'
 		lineageTag: b50badd0-f516-4d3a-9d67-e7fda2b8b61c
 		summarizeBy: sum
 		sourceColumn: Account Category
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

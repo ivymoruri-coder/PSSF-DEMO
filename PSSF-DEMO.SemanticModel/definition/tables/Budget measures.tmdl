@@ -1,0 +1,32 @@
+table 'Budget measures'
+	lineageTag: 43c61bff-a6e2-4e2d-8e15-a7f738356f0f
+
+	measure 'Budget amount' = SUM('G_L Budget'[Amount])
+		lineageTag: 08b8d6bd-ad81-4a36-b92b-890c310eadde
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Actual Amount' = SUM('G_L Entry'[Amount])
+		formatString: 0
+		lineageTag: 67c7f5d1-73f0-4fff-9f08-3a152e75d156
+
+	measure Variance = [Actual Amount]-[Budget amount]
+		lineageTag: 07f7ca3e-040c-4264-8550-80d7068dfda0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Budget measures'
+		formatString: 0
+		lineageTag: 79f9a0f4-eab3-42c4-adb4-6004d964fc96
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Budget measures]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Budget measures' = calculated
+		mode: import
+		source = Row("Budget measures", BLANK())
+
+	annotation PBI_Id = 949f0edd8ef3429aacf37678373cf633
+

@@ -13,6 +13,7 @@ annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBI_QueryOrder = ["G_L Account","G_L Entry","G_L Budget"]
 
+ref table 'G_L Budget'
 ref table 'G_L Account'
 ref table DateTableTemplate_e0279cd5-3847-4712-99e1-922703bba9ec
 ref table LocalDateTable_0a7801ec-2d02-4746-9248-df5d31f342f0
@@ -26,10 +27,10 @@ ref table LocalDateTable_bb2f60f1-e205-47f1-8243-5d580e1f36f5
 ref table LocalDateTable_ffc5fed5-0dad-47be-8d2a-623340d6c20a
 ref table LocalDateTable_614657aa-a776-40f1-bee5-1ebe0d045195
 ref table LocalDateTable_aa86d045-d33e-4eef-b881-6dd41056c90e
-ref table 'G_L Budget'
 ref table LocalDateTable_516b61e6-4616-4c87-b222-c0b17888dafa
 ref table CalendarTable
 ref table LocalDateTable_52653eeb-16d9-4da9-8c5a-25cd91f1ed67
+ref table 'Budget measures'
 
 ref cultureInfo en-GB
 

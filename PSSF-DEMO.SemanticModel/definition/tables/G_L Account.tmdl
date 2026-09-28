@@ -7,6 +7,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: No_
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Name
@@ -15,6 +17,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: Name
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Search Name'
@@ -22,6 +26,8 @@ table 'G_L Account'
 		lineageTag: 023c39cb-c1c3-472d-be8a-da51346fe1e8
 		summarizeBy: none
 		sourceColumn: Search Name
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -32,6 +38,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Account Type
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Global Dimension 1 Code'
@@ -40,6 +48,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: Global Dimension 1 Code
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Global Dimension 2 Code'
@@ -47,6 +57,8 @@ table 'G_L Account'
 		lineageTag: 5283afde-503a-4431-a864-df952a867006
 		summarizeBy: none
 		sourceColumn: Global Dimension 2 Code
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -57,6 +69,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Account Category
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Income_Balance
@@ -65,6 +79,8 @@ table 'G_L Account'
 		lineageTag: 78a045b0-810d-44e1-b6ab-d3764cffe4a7
 		summarizeBy: sum
 		sourceColumn: Income_Balance
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -75,6 +91,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Debit_Credit
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'No_ 2'
@@ -82,6 +100,8 @@ table 'G_L Account'
 		lineageTag: dc620093-49bc-4fbe-a889-69ef469eb31b
 		summarizeBy: none
 		sourceColumn: No_ 2
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -92,6 +112,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Blocked
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Direct Posting'
@@ -100,6 +122,8 @@ table 'G_L Account'
 		lineageTag: 05df671c-fad1-480a-857a-718212bcf3b0
 		summarizeBy: sum
 		sourceColumn: Direct Posting
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -110,6 +134,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Reconciliation Account
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'New Page'
@@ -118,6 +144,8 @@ table 'G_L Account'
 		lineageTag: 64e0468b-be78-409b-88cf-af24cf562ab5
 		summarizeBy: sum
 		sourceColumn: New Page
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -128,6 +156,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: No_ of Blank Lines
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Indentation
@@ -137,6 +167,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Indentation
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Source Currency Code'
@@ -144,6 +176,8 @@ table 'G_L Account'
 		lineageTag: 3d586bf6-4e90-48ca-a24b-bb4252a3c4d6
 		summarizeBy: none
 		sourceColumn: Source Currency Code
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -154,6 +188,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Source Currency Posting
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Source Currency Revaluation'
@@ -163,6 +199,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Source Currency Revaluation
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Unrealized Revaluation'
@@ -171,6 +209,8 @@ table 'G_L Account'
 		lineageTag: 0df07012-d2f0-4261-afac-6119960dec9c
 		summarizeBy: sum
 		sourceColumn: Unrealized Revaluation
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -186,6 +226,8 @@ table 'G_L Account'
 			relationship: fcd2a6a7-3c2b-4cf4-b0a3-eda98cb09a0d
 			defaultHierarchy: LocalDateTable_0a7801ec-2d02-4746-9248-df5d31f342f0.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Last Date Modified'
@@ -200,6 +242,8 @@ table 'G_L Account'
 			relationship: b1d3ffe7-89b4-4767-8419-3c5ff4dda5f6
 			defaultHierarchy: LocalDateTable_56125f26-9004-444e-a488-af14b98f47b2.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Totaling
@@ -207,6 +251,8 @@ table 'G_L Account'
 		lineageTag: c60c5c32-65a9-4221-a862-374d2661d0dc
 		summarizeBy: none
 		sourceColumn: Totaling
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -217,6 +263,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Consol_ Translation Method
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Consol_ Debit Acc_'
@@ -225,6 +273,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: Consol_ Debit Acc_
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Consol_ Credit Acc_'
@@ -232,6 +282,8 @@ table 'G_L Account'
 		lineageTag: 88aeb317-e9de-4716-b238-e7ff943a8ea6
 		summarizeBy: none
 		sourceColumn: Consol_ Credit Acc_
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -242,6 +294,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Gen_ Posting Type
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Gen_ Bus_ Posting Group'
@@ -250,6 +304,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: Gen_ Bus_ Posting Group
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Gen_ Prod_ Posting Group'
@@ -257,6 +313,8 @@ table 'G_L Account'
 		lineageTag: 1634c7f2-3612-46bd-b438-c3bf47aec605
 		summarizeBy: none
 		sourceColumn: Gen_ Prod_ Posting Group
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -267,6 +325,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Automatic Ext_ Texts
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Tax Area Code'
@@ -274,6 +334,8 @@ table 'G_L Account'
 		lineageTag: 70218db6-5bfa-45a5-873f-9d99242450ac
 		summarizeBy: none
 		sourceColumn: Tax Area Code
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -284,6 +346,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Tax Liable
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Tax Group Code'
@@ -291,6 +355,8 @@ table 'G_L Account'
 		lineageTag: 5afa0563-41c5-4fc6-8158-13e403261fcb
 		summarizeBy: none
 		sourceColumn: Tax Group Code
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -300,6 +366,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: VAT Bus_ Posting Group
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'VAT Prod_ Posting Group'
@@ -307,6 +375,8 @@ table 'G_L Account'
 		lineageTag: 4a0ceb3b-0e22-4886-8bfa-710f5fd987bf
 		summarizeBy: none
 		sourceColumn: VAT Prod_ Posting Group
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -317,6 +387,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Exchange Rate Adjustment
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Default IC Partner G_L Acc_ No'
@@ -324,6 +396,8 @@ table 'G_L Account'
 		lineageTag: c87df8f4-8287-4761-9065-2061daee8f91
 		summarizeBy: none
 		sourceColumn: Default IC Partner G_L Acc_ No
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -334,6 +408,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Omit Default Descr_ in Jnl_
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Account Subcategory Entry No_'
@@ -342,6 +418,8 @@ table 'G_L Account'
 		lineageTag: b65254ce-a817-4a15-8aee-21e2f5c71827
 		summarizeBy: sum
 		sourceColumn: Account Subcategory Entry No_
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -352,6 +430,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: Exclude From Consolidation
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Cost Type No_'
@@ -360,6 +440,8 @@ table 'G_L Account'
 		summarizeBy: none
 		sourceColumn: Cost Type No_
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Default Deferral Template Code'
@@ -367,6 +449,8 @@ table 'G_L Account'
 		lineageTag: 97c52541-0e99-419a-b60a-e9f99f4dcdb9
 		summarizeBy: none
 		sourceColumn: Default Deferral Template Code
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -377,6 +461,8 @@ table 'G_L Account'
 		summarizeBy: sum
 		sourceColumn: API Account Type
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column $systemId
@@ -384,6 +470,8 @@ table 'G_L Account'
 		lineageTag: a7052355-00d1-42b2-902b-c45f85f166ad
 		summarizeBy: none
 		sourceColumn: $systemId
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -399,6 +487,8 @@ table 'G_L Account'
 			relationship: 6374f9c5-8de5-4c77-ba68-3def13556fdc
 			defaultHierarchy: LocalDateTable_35aa34af-0c86-4294-89af-36b5580f9c55.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column $systemCreatedBy
@@ -406,6 +496,8 @@ table 'G_L Account'
 		lineageTag: e1b0c310-33dc-42a1-8179-6da8c615ad55
 		summarizeBy: none
 		sourceColumn: $systemCreatedBy
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -421,6 +513,8 @@ table 'G_L Account'
 			relationship: 76030e76-4543-47c5-b960-490f9140eba6
 			defaultHierarchy: LocalDateTable_6db42b8b-2a69-4bee-92b1-19343b222e88.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column $systemModifiedBy
@@ -428,6 +522,8 @@ table 'G_L Account'
 		lineageTag: 3c1bc45a-e9c0-41e2-88ad-c019387fe7cc
 		summarizeBy: none
 		sourceColumn: $systemModifiedBy
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -444,6 +540,8 @@ table 'G_L Account'
 		lineageTag: a7a696c9-12b3-457a-8038-c4e177837f9c
 		summarizeBy: none
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	partition 'G_L Account' = m
@@ -454,4 +552,6 @@ table 'G_L Account'
 				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PSSF$G_L Account$437dbf0e-84ff-417a-965d-ed2bb9650972"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

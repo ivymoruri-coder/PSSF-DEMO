@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "6fc6f1fb0da282d01b48",
+  "position": {
+    "x": 408.19211515836582,
+    "y": 0,
+    "z": 1,
+    "height": 252,
+    "width": 334,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Budget measures"
+                    }
+                  },
+                  "Property": "Actual Amount"
+                }
+              },
+              "queryRef": "Budget measures.Actual Amount",
+              "nativeQueryRef": "Actual Amount"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Budget measures"
+                  }
+                },
+                "Property": "Actual Amount"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ad961758839c016c3ec8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budget measures"
+              }
+            },
+            "Property": "Actual Amount"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
